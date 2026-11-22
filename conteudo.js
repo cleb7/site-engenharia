@@ -1,134 +1,145 @@
 /* =========================================================================
    CONTEÚDO DO SITE — EDITE AQUI
    -------------------------------------------------------------------------
-   Todos os textos, telefones, serviços, depoimentos e imagens do site ficam
-   neste arquivo. Basta trocar o que está entre aspas e salvar (commit).
+   Tudo que aparece no site está neste arquivo. Troque os textos entre
+   [colchetes] pelos dados reais e salve (Commit changes).
+   - Cuidado para não apagar aspas "  vírgulas ,  ou chaves { }.
    - Imagens: envie para a pasta /imagens e coloque o caminho aqui
-     (ex.: "imagens/minha-foto.jpg"). Se a imagem não existir, o site mostra
-     um fundo escuro no lugar, então nada quebra.
-   - Para remover um item de uma lista (serviço, depoimento...), apague o
-     bloco { ... } inteiro, incluindo a vírgula.
+     (ex.: "imagens/foto.jpg"). Sem imagem, o site mostra um fundo neutro.
+   - Para remover um item de uma lista, apague o bloco { ... }, inclusive
+     a vírgula depois dele. Para adicionar, copie um bloco e cole abaixo.
    ========================================================================= */
 
 const SITE = {
   empresa: {
-    nome: "SUA EMPRESA",
-    sufixo: "ENGENHARIA",              // aparece ao lado do nome no logo
-    logo: "",                           // ex.: "imagens/logo.png" (vazio = logo em texto)
-    titulo: "Sua Empresa Engenharia — Prevenção contra incêndio",
-    descricao: "Projetos preventivos, alvarás e regularização junto ao Corpo de Bombeiros.",
-    regiao: "Atendemos toda a região de Sua Cidade. Atendimento presencial mediante agendamento.",
-    whatsapp: "5548999999999",          // só números, com 55 + DDD
-    whatsappExibicao: "(48) 99999-9999",
+    nome: "[NOME DA EMPRESA]",
+    sufixo: "Engenharia",
+    logo: "",                                   // ex.: "imagens/logo.png" (vazio = logo em texto)
+    tituloAba: "[Nome da Empresa] Engenharia — PCI, NR-12 e Projetos Mecânicos",
+    descricaoGoogle: "[Descrição curta para o Google: serviços e cidade de atuação]",
+    regiao: "[Cidade / região de atendimento]",
+    whatsapp: "5500000000000",                  // só números: 55 + DDD + número
+    whatsappExibicao: "([DDD]) [00000-0000]",
     mensagemWhatsapp: "Olá! Vim pelo site e gostaria de um orçamento.",
-    email: "contato@suaempresa.com.br",
-    endereco: "Rua Exemplo, 123 — Centro, Sua Cidade/SC",
-    horario: "Segunda a sexta, das 8h às 18h",
-    instagram: "https://instagram.com/suaempresa",
-    cnpj: "00.000.000/0001-00",
-    corPrincipal: "#e04848",            // cor dos botões e destaques
-    corEscura: "#1d1d1f",               // cor do menu e rodapé
+    email: "[contato@suaempresa.com.br]",
+    endereco: "[Endereço completo]",
+    horario: "[Seg. a sex., 8h às 18h]",
+    instagram: "",                              // ex.: "https://instagram.com/suaempresa" (vazio = esconde)
+    linkedin: "",                               // ex.: "https://linkedin.com/in/seuperfil" (vazio = esconde)
+    cnpj: "[00.000.000/0000-00]",
+    corPrincipal: "#f28c28",                    // destaques e botões
+    corEscura: "#0f2233",                       // fundo do topo, faixas e rodapé
   },
 
   banner: {
-    titulo: "Especialistas em soluções de prevenção contra incêndio na sua região",
-    texto: "Cuidamos de todo o processo para deixar sua edificação regularizada junto ao Corpo de Bombeiros, com rapidez, transparência e acompanhamento do início ao fim.",
+    selo: "Engenharia Mecânica",
+    titulo: "[Frase principal: o que a empresa resolve para o cliente]",
+    texto: "[Um parágrafo curto explicando a proposta da empresa e para quem ela trabalha.]",
     imagem: "imagens/banner.jpg",
-    botao1: "Conheça nossos serviços",
-    botao2: "Contato",
-  },
-
-  clientes: {
-    titulo: "Empresas que confiam no nosso trabalho",
-    // Coloque os logos em imagens/clientes/ e liste aqui. Se não tiver logo, deixe imagem vazia: aparece o nome.
-    lista: [
-      { nome: "Cliente 1", imagem: "" },
-      { nome: "Cliente 2", imagem: "" },
-      { nome: "Cliente 3", imagem: "" },
-      { nome: "Cliente 4", imagem: "" },
-      { nome: "Cliente 5", imagem: "" },
-      { nome: "Cliente 6", imagem: "" },
-    ],
+    botao1: "Ver serviços",
+    botao2: "Solicitar orçamento",
+    destaques: ["[Destaque 1]", "[Destaque 2]", "[Destaque 3]"],   // ex.: "Responsável técnico com ART"
   },
 
   servicos: {
-    titulo: "Serviços",
-    texto: "Atuamos em todas as etapas da prevenção contra incêndio: do projeto à liberação final da sua edificação.",
-    botao: "Quero esse serviço",
+    titulo: "Áreas de atuação",
+    texto: "[Frase curta apresentando os serviços.]",
+    botao: "Solicitar orçamento",
     lista: [
       {
-        titulo: "PPCI — Projeto Preventivo Contra Incêndio",
-        texto: "Desenvolvemos o projeto preventivo de acordo com as normas vigentes e acompanhamos a análise até a aprovação.",
-        imagem: "imagens/servico-1.jpg",
+        icone: "🔥",
+        titulo: "PCI — Proteção Contra Incêndio",
+        texto: "[Descreva o serviço de PCI em 1–2 frases.]",
+        itens: ["[Item do serviço]", "[Item do serviço]", "[Item do serviço]", "[Item do serviço]"],
+        imagem: "imagens/servico-pci.jpg",
       },
       {
-        titulo: "Alvarás do Corpo de Bombeiros",
-        texto: "Executamos os sistemas previstos no projeto e cuidamos da emissão dos alvarás e certificados necessários.",
-        imagem: "imagens/servico-2.jpg",
+        icone: "⚙️",
+        titulo: "Projetos de NR-12",
+        texto: "[Descreva o serviço de NR-12 em 1–2 frases.]",
+        itens: ["[Item do serviço]", "[Item do serviço]", "[Item do serviço]", "[Item do serviço]"],
+        imagem: "imagens/servico-nr12.jpg",
       },
       {
-        titulo: "Regularização de Edificações Existentes",
-        texto: "Resolvemos pendências de imóveis já construídos, apontando o caminho mais econômico para a regularização.",
-        imagem: "imagens/servico-3.jpg",
+        icone: "📐",
+        titulo: "Projetos Mecânicos",
+        texto: "[Descreva os projetos mecânicos específicos em 1–2 frases.]",
+        itens: ["[Item do serviço]", "[Item do serviço]", "[Item do serviço]", "[Item do serviço]"],
+        imagem: "imagens/servico-mecanico.jpg",
       },
-      {
-        titulo: "Laudos Técnicos com ART",
-        texto: "Emitimos laudos de funcionamento dos sistemas preventivos, com Anotação de Responsabilidade Técnica.",
-        imagem: "imagens/servico-4.jpg",
-      },
-      {
-        titulo: "Inspeção Pré-Vistoria",
-        texto: "Conferimos os sistemas antes da vistoria oficial e corrigimos o que for preciso para evitar reprovações.",
-        imagem: "imagens/servico-5.jpg",
-      },
-      {
-        titulo: "Consultoria Técnica",
-        texto: "Orientação especializada para arquitetos, construtoras e proprietários em qualquer fase da obra.",
-        imagem: "imagens/servico-6.jpg",
-      },
+    ],
+  },
+
+  processo: {
+    titulo: "Como trabalhamos",
+    lista: [
+      { titulo: "[Etapa 1]", texto: "[Ex.: Visita técnica e levantamento]" },
+      { titulo: "[Etapa 2]", texto: "[Ex.: Proposta e cronograma]" },
+      { titulo: "[Etapa 3]", texto: "[Ex.: Desenvolvimento do projeto]" },
+      { titulo: "[Etapa 4]", texto: "[Ex.: Entrega com ART e acompanhamento]" },
+    ],
+  },
+
+  numeros: [
+    { valor: "[00]+", legenda: "[projetos entregues]" },
+    { valor: "[00]+", legenda: "[clientes atendidos]" },
+    { valor: "[00]", legenda: "[anos de experiência]" },
+    { valor: "[00]", legenda: "[cidades atendidas]" },
+  ],
+
+  engenheiro: {
+    titulo: "Sobre o engenheiro",
+    nome: "[Nome do Engenheiro]",
+    cargo: "Engenheiro Mecânico — CREA [UF 000000]",
+    texto: "[Conte a formação, a experiência e o que motiva o trabalho. Dois parágrafos curtos funcionam bem.]",
+    foto: "imagens/engenheiro.jpg",
+    formacao: ["[Formação / especialização]", "[Certificação ou curso]", "[Experiência relevante]"],
+  },
+
+  diferenciais: {
+    titulo: "Por que nos escolher",
+    lista: [
+      { titulo: "[Diferencial 1]", texto: "[Explique em uma frase.]" },
+      { titulo: "[Diferencial 2]", texto: "[Explique em uma frase.]" },
+      { titulo: "[Diferencial 3]", texto: "[Explique em uma frase.]" },
+      { titulo: "[Diferencial 4]", texto: "[Explique em uma frase.]" },
+    ],
+  },
+
+  clientes: {
+    titulo: "Quem já confiou no nosso trabalho",
+    mostrar: true,                              // false = esconde esta seção
+    lista: [                                     // logo em imagens/clientes/ ou só o nome
+      { nome: "[Cliente]", imagem: "" },
+      { nome: "[Cliente]", imagem: "" },
+      { nome: "[Cliente]", imagem: "" },
+      { nome: "[Cliente]", imagem: "" },
+      { nome: "[Cliente]", imagem: "" },
     ],
   },
 
   depoimentos: {
-    titulo: "O que os nossos clientes falam",
+    titulo: "O que dizem os clientes",
+    mostrar: true,
     lista: [
-      { nome: "Nome do Cliente", cargo: "Síndico — Condomínio Exemplo", texto: "Atendimento excelente e muito rápido. Resolveram toda a documentação sem dor de cabeça." },
-      { nome: "Nome do Cliente", cargo: "Proprietária — Loja Exemplo", texto: "Profissionais atenciosos, explicaram cada etapa e cumpriram todos os prazos combinados." },
-      { nome: "Nome do Cliente", cargo: "Gerente — Empresa Exemplo", texto: "Recomendo! Conseguimos o alvará antes do previsto e com um custo menor do que esperávamos." },
+      { nome: "[Nome]", cargo: "[Cargo — Empresa]", texto: "[Depoimento do cliente.]" },
+      { nome: "[Nome]", cargo: "[Cargo — Empresa]", texto: "[Depoimento do cliente.]" },
+      { nome: "[Nome]", cargo: "[Cargo — Empresa]", texto: "[Depoimento do cliente.]" },
     ],
   },
 
-  numeros: {
-    titulo: "Segurança no projeto, economia garantida",
+  perguntas: {
+    titulo: "Perguntas frequentes",
     lista: [
-      { valor: "+ R$ 000.000", legenda: "de economia gerada aos clientes" },
-      { valor: "+ 000", legenda: "projetos aprovados" },
-      { valor: "+ 00", legenda: "anos de experiência" },
-    ],
-  },
-
-  sobre: {
-    titulo: "Sobre nós",
-    texto: "Conte aqui a história da sua empresa: quando começou, quem são os responsáveis técnicos, em que região atua e o que vocês fazem de diferente. Um ou dois parágrafos curtos funcionam melhor.",
-    imagem: "imagens/sobre.jpg",
-    pilares: [
-      { titulo: "Missão", texto: "Escreva aqui a missão da empresa." },
-      { titulo: "Visão", texto: "Escreva aqui a visão da empresa." },
-      { titulo: "Valores", texto: "Ética, transparência, compromisso com prazos e segurança em primeiro lugar." },
-    ],
-  },
-
-  diferenciais: {
-    titulo: "Motivos para escolher a Sua Empresa",
-    lista: [
-      { icone: "🎯", titulo: "Especialização", texto: "Equipe dedicada exclusivamente à área de prevenção contra incêndio." },
-      { icone: "⚡", titulo: "Qualidade e agilidade", texto: "Processos organizados para entregar no prazo, sem retrabalho." },
-      { icone: "🛡️", titulo: "Garantia", texto: "Acompanhamos o seu processo até a aprovação final." },
+      { pergunta: "[Pergunta frequente]", resposta: "[Resposta.]" },
+      { pergunta: "[Pergunta frequente]", resposta: "[Resposta.]" },
+      { pergunta: "[Pergunta frequente]", resposta: "[Resposta.]" },
+      { pergunta: "[Pergunta frequente]", resposta: "[Resposta.]" },
     ],
   },
 
   contato: {
-    titulo: "Faça um orçamento!",
-    texto: "Entre em contato conosco e receba uma proposta sem compromisso.",
+    titulo: "Vamos conversar sobre o seu projeto",
+    texto: "[Frase convidando o cliente a pedir orçamento.]",
   },
 };

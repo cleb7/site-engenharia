@@ -1,36 +1,39 @@
-# Site institucional — Engenharia / Prevenção contra incêndio
+# Site — Engenharia Mecânica (PCI, NR-12 e Projetos Mecânicos)
 
-Site de uma página só, feito em HTML/CSS/JS puro (não precisa instalar nada).
+Site de uma página só, em HTML/CSS/JS puro. Publicado em: https://cleb7.github.io/site-engenharia/
 
-## Como editar
+## Como preencher
 
 **Todos os textos ficam no arquivo [`conteudo.js`](conteudo.js).**
 
-1. Abra `conteudo.js` aqui no GitHub e clique no lápis ✏️ (Edit).
-2. Troque o que estiver entre aspas: nome da empresa, WhatsApp, e-mail, serviços, depoimentos etc.
-3. Clique em **Commit changes**. Em 1–2 minutos o site publicado é atualizado.
+1. Abra `conteudo.js` aqui no GitHub e clique no lápis ✏️.
+2. Troque tudo que estiver entre `[colchetes]` pelos dados reais.
+3. Clique em **Commit changes**. O site atualiza em 1–2 minutos.
 
-Cuidado só para não apagar aspas `"`, vírgulas `,` ou chaves `{ }`.
+Só não apague aspas `"`, vírgulas `,` ou chaves `{ }`.
+
+Seções que podem ser escondidas: em `clientes` e `depoimentos`, mude `mostrar: true` para `mostrar: false`.
 
 ## Imagens
 
-Envie as fotos para a pasta [`imagens/`](imagens) (botão **Add file → Upload files**) com estes nomes, ou mude os caminhos no `conteudo.js`:
+Envie para a pasta [`imagens/`](imagens) (**Add file → Upload files**) com estes nomes:
 
 | Arquivo | Onde aparece | Tamanho sugerido |
 |---|---|---|
-| `imagens/banner.jpg` | Fundo do topo | 1920×900 |
-| `imagens/servico-1.jpg` … `servico-6.jpg` | Cards de serviços | 800×500 |
-| `imagens/sobre.jpg` | Seção "Sobre nós" | 900×900 |
+| `imagens/banner.jpg` | Imagem ao lado do título principal | 1000×1100 |
+| `imagens/servico-pci.jpg` | Card de PCI | 900×700 |
+| `imagens/servico-nr12.jpg` | Card de NR-12 | 900×700 |
+| `imagens/servico-mecanico.jpg` | Card de Projetos Mecânicos | 900×700 |
+| `imagens/engenheiro.jpg` | Foto do engenheiro | 800×1000 |
 | `imagens/logo.png` | Logo (preencha `logo:` no conteudo.js) | altura ~100px |
 | `imagens/clientes/*.png` | Logos de clientes | ~300×150 |
 
-Enquanto uma imagem não existir, o site mostra um fundo escuro no lugar.
-
-## Publicar (GitHub Pages)
-
-Settings → Pages → *Build and deployment* → Source: **Deploy from a branch** → Branch: `main` / `(root)` → Save.
-O endereço aparece no topo da mesma página. Para usar domínio próprio, preencha **Custom domain**.
+Enquanto a imagem não existe, aparece um fundo neutro no lugar.
 
 ## Cores
 
-No `conteudo.js`, em `empresa`, troque `corPrincipal` (botões/destaques) e `corEscura` (menu/rodapé).
+Em `empresa`, no `conteudo.js`: `corPrincipal` (laranja dos destaques) e `corEscura` (azul do topo e rodapé).
+
+## Domínio próprio
+
+Settings → Pages → Custom domain.
