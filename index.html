@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carregando…</title>
+  <meta name="description" content="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Não precisa editar este arquivo: os textos ficam em conteudo.js -->
+
+  <div class="topbar"><div class="container"><span>📍</span> <span id="regiao"></span></div></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" id="logo"></a>
+      <div class="header-actions">
+        <a class="header-whats" id="header-whats" target="_blank" rel="noopener">
+          <span class="whats-icon">✆</span>
+          <span><small>WhatsApp</small><strong id="whats-numero"></strong></span>
+        </a>
+        <a class="btn btn-primary" data-whats target="_blank" rel="noopener">Fale conosco</a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menu" id="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#inicio">Página inicial</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#diferenciais">Por que escolher?</a>
+      <a href="#depoimentos">Clientes</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <h1 id="banner-titulo"></h1>
+      <p id="banner-texto"></p>
+      <div class="hero-buttons">
+        <a href="#servicos" class="btn btn-primary" id="banner-botao1"></a>
+        <a class="btn btn-light" data-whats target="_blank" rel="noopener" id="banner-botao2"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="clientes">
+    <div class="container">
+      <h2 class="center" id="clientes-titulo"></h2>
+      <div class="logos" id="clientes-lista"></div>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="servicos-titulo"></h2>
+        <p id="servicos-texto"></p>
+      </div>
+      <div class="cards" id="servicos-lista"></div>
+    </div>
+  </section>
+
+  <section class="numeros">
+    <div class="container">
+      <h2 class="center" id="numeros-titulo"></h2>
+      <div class="numeros-grid" id="numeros-lista"></div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-img" id="sobre-img"></div>
+      <div>
+        <h2 id="sobre-titulo"></h2>
+        <p id="sobre-texto"></p>
+        <div class="pilares" id="sobre-pilares"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="diferenciais" id="diferenciais">
+    <div class="container">
+      <h2 class="center" id="diferenciais-titulo"></h2>
+      <div class="dif-grid" id="diferenciais-lista"></div>
+    </div>
+  </section>
+
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <h2 class="center" id="depoimentos-titulo"></h2>
+      <div class="dep-grid" id="depoimentos-lista"></div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="container contato-grid">
+      <div>
+        <h2 id="contato-titulo"></h2>
+        <p id="contato-texto"></p>
+        <ul class="contato-info" id="contato-info"></ul>
+      </div>
+      <form class="form" id="form">
+        <input name="nome" placeholder="Seu nome" required />
+        <input name="telefone" placeholder="Telefone / WhatsApp" required />
+        <input name="cidade" placeholder="Cidade" />
+        <textarea name="mensagem" rows="4" placeholder="Conte o que você precisa"></textarea>
+        <button class="btn btn-primary" type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span id="footer-texto"></span>
+      <a id="footer-insta" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <a class="whats-float" data-whats target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+
+  <script src="conteudo.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
